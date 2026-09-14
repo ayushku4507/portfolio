@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Ayush Kumar Portfolio - Responsive Design & Media Queries
+   ========================================================================== */
+
+/* Medium Devices (Tablets & Small Laptops: <= 1024px) */
+@media screen and (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .journey-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet Devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding-left: 54px;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-node {
+    left: 9px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .resume-box {
+    padding: 32px 20px;
+  }
+
+  .modal-container {
+    margin: 16px;
+    max-height: 85vh;
+  }
+
+  .modal-content-area {
+    padding: 24px 20px;
+  }
+}
+
+/* Mobile Devices (<= 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .hero-card-container {
+    width: 270px;
+    height: 330px;
+  }
+
+  .avatar-ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .avatar-initials {
+    font-size: 2.8rem;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .resume-actions .btn {
+    width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
