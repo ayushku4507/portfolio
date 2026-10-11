@@ -1,0 +1,4123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Ayush Kumar | B.Tech CSE Student & Developer Portfolio</title>
+  <meta name="title" content="Ayush Kumar | B.Tech CSE Student & Developer Portfolio">
+  <meta name="description" content="Portfolio of Ayush Kumar - First-year B.Tech Computer Science & Engineering student, AI/ML enthusiast, and software developer. Explore projects, technical skills, certifications, and learning journey.">
+  <meta name="keywords" content="Ayush Kumar, B.Tech CSE, Portfolio, AI/ML, Developer, Python, Algorithms, Web Development, Computer Science">
+  <meta name="author" content="Ayush Kumar">
+  <meta name="theme-color" content="#080b11">
+
+  <!-- Favicon / Apple Touch Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><rect width='24' height='24' rx='6' fill='%236366f1'/><text x='12' y='17' font-size='13' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AK</text></svg>">
+
+  <!-- Stylesheets -->
+  
+  <style>
+/* ==========================================================================
+   INLINE BUNDLED STYLES
+   ========================================================================== */
+/* ==========================================================================
+   Ayush Kumar Portfolio - Design Tokens & Core Styles
+   Aesthetic: Modern Developer / AI Aesthetic (Dark-First with Light Mode)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette - Dark Mode (Default) */
+  --bg-primary: #080b11;
+  --bg-secondary: #0f141f;
+  --bg-tertiary: #161d2d;
+  --bg-glass: rgba(15, 20, 31, 0.75);
+  --bg-glass-card: rgba(22, 29, 45, 0.65);
+  --bg-glass-card-hover: rgba(30, 41, 64, 0.85);
+  --bg-modal: rgba(8, 11, 17, 0.85);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(99, 102, 241, 0.45);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-accent: #818cf8;
+
+  --accent-primary: #6366f1;       /* Indigo */
+  --accent-secondary: #8b5cf6;     /* Violet */
+  --accent-cyan: #06b6d4;          /* Cyan */
+  --accent-emerald: #10b981;       /* Emerald */
+  --accent-amber: #f59e0b;         /* Amber */
+
+  --gradient-accent: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #06b6d4 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.05) 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15), transparent 70%);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
+
+  /* Spacing & Layout */
+  --container-max-width: 1200px;
+  --header-height: 76px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Light Theme Variables */
+:root[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-card: rgba(255, 255, 255, 0.88);
+  --bg-glass-card-hover: #ffffff;
+  --bg-modal: rgba(248, 250, 252, 0.85);
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-card: rgba(15, 23, 42, 0.12);
+  --border-hover: rgba(99, 102, 241, 0.5);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-accent: #4f46e5;
+
+  --gradient-accent: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #0891b2 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.03) 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.1), transparent 70%);
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.15);
+}
+
+/* Base Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 20px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+    radial-gradient(at 85% 25%, rgba(139, 92, 246, 0.06) 0px, transparent 50%),
+    radial-gradient(at 50% 85%, rgba(6, 182, 212, 0.05) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Selection */
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.section {
+  padding: 90px 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.section-tag svg {
+  width: 14px;
+  height: 14px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  margin-bottom: 14px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.text-gradient {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Scroll Progress Bar at Top */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--gradient-accent);
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+}
+
+
+/* ==========================================================================
+   Ayush Kumar Portfolio - Components & Interactive UI
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Buttons & Badges
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.btn-primary {
+  background: var(--gradient-accent);
+  color: #ffffff;
+  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 26px rgba(99, 102, 241, 0.5);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: var(--bg-glass-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-card);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-glass-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-card);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-accent);
+  background: var(--gradient-subtle);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.btn:hover svg {
+  transform: translateX(2px);
+}
+
+/* Glass Card Base */
+.glass-card {
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-emerald);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-emerald);
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: inherit;
+  opacity: 0.5;
+  animation: pulseAnimation 2s infinite ease-in-out;
+}
+
+@keyframes pulseAnimation {
+  0% { transform: scale(0.6); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 0.2; }
+  100% { transform: scale(0.6); opacity: 0.8; }
+}
+
+/* --------------------------------------------------------------------------
+   2. Sticky Navigation Bar
+   -------------------------------------------------------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  z-index: 999;
+  transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-sm);
+  background: var(--bg-primary);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--gradient-accent);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: var(--text-accent);
+  background: var(--gradient-subtle);
+  font-weight: 600;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-hover);
+  transform: rotate(15deg);
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+/* Mobile Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Navigation Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-card);
+  padding: 90px 24px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+  transition: right var(--transition-normal);
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  display: none;
+}
+
+.mobile-nav-overlay.active {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   3. Hero Section
+   -------------------------------------------------------------------------- */
+.hero-section {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--header-height) + 40px);
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  margin-bottom: 24px;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.hero-badge-tag {
+  display: inline-block;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.hero-intro {
+  font-size: 1.12rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-social-label {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.social-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  transition: all var(--transition-normal);
+}
+
+.social-icon-btn:hover {
+  border-color: var(--accent-primary);
+  background: var(--gradient-subtle);
+  color: var(--accent-primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hero Avatar / Visual Showcase */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-card-container {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  perspective: 1000px;
+}
+
+.hero-avatar-card {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(20px);
+}
+
+.avatar-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 4px;
+  background: var(--gradient-accent);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.hero-avatar-card:hover .avatar-img {
+  transform: scale(1.06);
+}
+
+.avatar-initials {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floating-tech-badge {
+  position: absolute;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+  animation: floatAnim 4s ease-in-out infinite alternate;
+}
+
+.floating-badge-1 {
+  top: -10px;
+  right: -20px;
+}
+
+.floating-badge-2 {
+  bottom: 20px;
+  left: -20px;
+  animation-delay: -2s;
+}
+
+@keyframes floatAnim {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* --------------------------------------------------------------------------
+   4. About Me Section
+   -------------------------------------------------------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.about-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card h3 {
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+}
+
+.about-card h3 svg {
+  color: var(--accent-primary);
+}
+
+.exploring-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.exploring-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.exploring-item:hover {
+  background: var(--gradient-subtle);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.exploring-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-cyan);
+}
+
+/* --------------------------------------------------------------------------
+   5. Education Timeline
+   -------------------------------------------------------------------------- */
+.timeline-container {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-primary), var(--accent-cyan), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 17px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  z-index: 2;
+}
+
+.timeline-card {
+  padding: 28px;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.timeline-degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--gradient-subtle);
+  color: var(--text-accent);
+  border: 1px solid var(--border-hover);
+}
+
+.timeline-institution {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 12px 0;
+  font-size: 0.9rem;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.timeline-subjects {
+  margin-top: 14px;
+}
+
+.subjects-label {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.subject-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.subject-tag {
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   6. Skills Section
+   -------------------------------------------------------------------------- */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-tab {
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-tab:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.filter-tab.active {
+  background: var(--gradient-accent);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.skill-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+}
+
+.skill-icon-wrapper svg {
+  width: 22px;
+  height: 22px;
+}
+
+.skill-level-badge {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+}
+
+.level-currently-learning {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.level-beginner {
+  background: rgba(6, 182, 212, 0.12);
+  color: #22d3ee;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.level-intermediate {
+  background: rgba(99, 102, 241, 0.12);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.level-advanced {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.skill-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.skill-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   7. Projects Section
+   -------------------------------------------------------------------------- */
+.featured-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--gradient-accent);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 32px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-thumbnail {
+  height: 200px;
+  width: 100%;
+  background: var(--bg-tertiary);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-bounce);
+}
+
+.project-card:hover .project-thumbnail-img {
+  transform: scale(1.05);
+}
+
+.project-thumbnail-graphic {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(6, 182, 212, 0.1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.project-thumbnail-graphic svg {
+  width: 48px;
+  height: 48px;
+  color: var(--accent-primary);
+}
+
+.project-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-info-block {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-cyan);
+}
+
+.info-label {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info-content {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tech-tag {
+  padding: 4px 10px;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-accent);
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   8. Achievements Section
+   -------------------------------------------------------------------------- */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievement-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--accent-amber);
+  margin-bottom: 12px;
+}
+
+.achievement-category svg {
+  width: 14px;
+  height: 14px;
+}
+
+.achievement-title {
+  font-size: 1.18rem;
+  margin-bottom: 8px;
+}
+
+.achievement-event {
+  font-size: 0.92rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.achievement-date {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.achievement-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   9. Certifications Section
+   -------------------------------------------------------------------------- */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.cert-card {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.cert-icon-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.cert-icon-badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cert-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.cert-name {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.cert-issuer {
+  font-size: 0.95rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cert-topics {
+  margin-bottom: 16px;
+}
+
+.cert-credential-id {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* --------------------------------------------------------------------------
+   10. Learning Journey Section
+   -------------------------------------------------------------------------- */
+.journey-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.journey-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journey-col-header {
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.journey-col-header.active-col {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+.journey-col-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.journey-col-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.journey-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.journey-card.active-learning-card {
+  border-color: var(--accent-primary);
+  background: var(--bg-glass-card-hover);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+}
+
+.journey-item-title {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journey-item-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   11. Experience & Opportunities Section
+   -------------------------------------------------------------------------- */
+.opportunity-banner {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  text-align: center;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.opportunity-banner-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-hover);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.opportunity-banner-title {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.opportunity-banner-text {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin: 0 auto 24px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.experience-card {
+  padding: 28px;
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.experience-org {
+  font-size: 1rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.experience-duration {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.experience-responsibilities {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.experience-responsibilities li {
+  margin-bottom: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   12. Clubs & Extracurricular Activities
+   -------------------------------------------------------------------------- */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.activity-card {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.activity-role {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.activity-org {
+  font-size: 0.95rem;
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.activity-duration {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.activity-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.activity-contribution {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--accent-emerald);
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   13. Coding & Online Profiles
+   -------------------------------------------------------------------------- */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.profile-card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  background: var(--bg-glass-card-hover);
+}
+
+.profile-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent-primary);
+}
+
+.profile-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.profile-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.profile-info p {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.profile-arrow {
+  margin-left: auto;
+  color: var(--text-muted);
+  transition: transform var(--transition-fast);
+}
+
+.profile-card:hover .profile-arrow {
+  transform: translateX(4px);
+  color: var(--accent-primary);
+}
+
+/* --------------------------------------------------------------------------
+   14. Resume Section
+   -------------------------------------------------------------------------- */
+.resume-box {
+  padding: 48px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  margin: 0 auto 20px;
+}
+
+.resume-icon-circle svg {
+  width: 36px;
+  height: 36px;
+}
+
+.resume-box h3 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+
+.resume-box p {
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto 32px;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   15. Contact Section
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.contact-info-card {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-subtle);
+  border: 1px solid var(--border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.contact-info-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-info-label {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.contact-info-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-form-card {
+  padding: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--accent-primary);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* --------------------------------------------------------------------------
+   16. Footer
+   -------------------------------------------------------------------------- */
+.footer {
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.footer-quote {
+  font-style: italic;
+  color: var(--accent-cyan);
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   17. Modals & Notifications
+   -------------------------------------------------------------------------- */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-modal);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(20px) scale(0.96);
+  transition: all var(--transition-normal);
+}
+
+.modal-backdrop.open .modal-container {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.modal-close-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.modal-content-area {
+  padding: 36px;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--gradient-accent);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+/* Toast Container */
+.toast-container {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-normal);
+  pointer-events: auto;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-success {
+  border-color: var(--accent-emerald);
+}
+
+.toast-success svg {
+  color: var(--accent-emerald);
+}
+
+
+/* ==========================================================================
+   Ayush Kumar Portfolio - Responsive Design & Media Queries
+   ========================================================================== */
+
+/* Medium Devices (Tablets & Small Laptops: <= 1024px) */
+@media screen and (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .journey-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet Devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding-left: 54px;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-node {
+    left: 9px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .resume-box {
+    padding: 32px 20px;
+  }
+
+  .modal-container {
+    margin: 16px;
+    max-height: 85vh;
+  }
+
+  .modal-content-area {
+    padding: 24px 20px;
+  }
+}
+
+/* Mobile Devices (<= 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .hero-card-container {
+    width: 270px;
+    height: 330px;
+  }
+
+  .avatar-ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .avatar-initials {
+    font-size: 2.8rem;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .resume-actions .btn {
+    width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Ayush Kumar - Home">
+        <div class="brand-badge">AK</div>
+        <span>Ayush<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#journey" class="nav-link">Learning Journey</a>
+        <a href="#activities" class="nav-link">Activities</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Hamburger) -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme mode" title="Switch theme">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay & Drawer -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div style="margin-bottom: 20px;">
+      <span class="status-badge"><span class="pulse-dot"></span> Open to Internships</span>
+    </div>
+    <a href="#home" class="mobile-nav-link nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link nav-link">About</a>
+    <a href="#education" class="mobile-nav-link nav-link">Education</a>
+    <a href="#skills" class="mobile-nav-link nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link nav-link">Projects</a>
+    <a href="#achievements" class="mobile-nav-link nav-link">Achievements</a>
+    <a href="#certifications" class="mobile-nav-link nav-link">Certifications</a>
+    <a href="#journey" class="mobile-nav-link nav-link">Learning Journey</a>
+    <a href="#activities" class="mobile-nav-link nav-link">Activities</a>
+    <a href="#contact" class="mobile-nav-link nav-link">Contact</a>
+  </aside>
+
+  <main>
+    <!-- ======================================================================
+         1. HERO / HOME SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="pulse-dot"></span>
+            <span>Learning • Building • Experimenting • Growing</span>
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="text-gradient">Ayush Kumar</span>
+          </h1>
+
+          <div class="hero-badge-tag">
+            B.Tech CSE Student | AI/ML Enthusiast | Developer
+          </div>
+
+          <p class="hero-intro">
+            I am a first-year B.Tech student passionate about technology, programming, artificial intelligence and building practical projects. I am continuously learning new technologies and looking for opportunities to turn ideas into meaningful solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+            <a href="#resume" class="btn btn-secondary btn-download-resume">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="hero-social-label">Connect:</span>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:ayush.dev.contact@gmail.com" class="social-icon-btn" aria-label="Email Ayush" title="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Visual Card -->
+        <div class="hero-visual">
+          <div class="hero-card-container">
+            <div class="floating-tech-badge floating-badge-1">
+              <span class="pulse-dot"></span>
+              <span>AI / ML Explorer</span>
+            </div>
+
+            <div class="hero-avatar-card">
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <img src="assets/avatar.jpg" alt="Ayush Kumar - B.Tech CSE Student" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="avatar-initials" style="display: none;">AK</span>
+                </div>
+              </div>
+              <h3 style="font-size: 1.3rem; margin-bottom: 4px;">Ayush Kumar</h3>
+              <p style="font-size: 0.85rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-bottom: 12px;">CSE Freshman '29</p>
+              <div class="status-badge">
+                <span class="pulse-dot"></span> Available for Projects
+              </div>
+            </div>
+
+            <div class="floating-tech-badge floating-badge-2">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Clean Code First</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT ME SECTION
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            Background & Mindset
+          </span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A glimpse into who I am, what drives my curiosity, and the goals shaping my engineering journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story & Background -->
+          <div class="about-card glass-card">
+            <h3>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Who I Am & Academic Journey
+            </h3>
+            <p>
+              I am a first-year Computer Science & Engineering undergraduate with a genuine enthusiasm for understanding the building blocks of computation. Rather than merely viewing code as a tool for exams, I see it as a creative canvas to build software that solves tangible problems.
+            </p>
+            <p>
+              My academic foundation currently centers around procedural and object-oriented programming, discrete mathematics, and computer system architecture. In parallel, I actively study real-world engineering practices such as version control, automated testing, and algorithmic optimization.
+            </p>
+          </div>
+
+          <!-- Aspirations & Motivation -->
+          <div class="about-card glass-card">
+            <h3>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 6 12 12 16 14"/></svg>
+              Career Aspirations & Motivation
+            </h3>
+            <p>
+              <strong>My Aspiration:</strong> To evolve into an impactful software and machine learning engineer who designs resilient distributed systems and intelligent, human-centric AI applications.
+            </p>
+            <p>
+              <strong>What Motivates Me:</strong> The thrill of turning abstract mathematical and logical concepts into living software. Nothing matches the satisfaction of identifying an elusive bug, optimizing an algorithm's complexity, or seeing someone use a tool you built.
+            </p>
+          </div>
+
+          <!-- Core Strengths -->
+          <div class="about-card glass-card">
+            <h3>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              My Strengths
+            </h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-secondary);">
+                <span style="color: var(--accent-emerald);">✓</span>
+                <span><strong>Proactive Self-Learner:</strong> Accustomed to exploring technical documentation, RFCs, and online courses independently.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-secondary);">
+                <span style="color: var(--accent-emerald);">✓</span>
+                <span><strong>Disciplined Problem Solver:</strong> Analytical approach to breaking down complex challenges into testable modular units.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-secondary);">
+                <span style="color: var(--accent-emerald);">✓</span>
+                <span><strong>Collaborative Teammate:</strong> Effective verbal communicator who welcomes feedback and thrives in group brainstorming.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Currently Exploring -->
+          <div class="about-card glass-card">
+            <h3>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              Currently Exploring
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">Technologies and fields I am actively diving into every week:</p>
+            <div class="exploring-grid">
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3h10V7a5 5 0 0 0-5-5z"/></svg>
+                <span>Python</span>
+              </div>
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15"/></svg>
+                <span>AI & ML</span>
+              </div>
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/></svg>
+                <span>DSA</span>
+              </div>
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+                <span>Web Dev</span>
+              </div>
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8"/></svg>
+                <span>Generative AI</span>
+              </div>
+              <div class="exploring-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"/></svg>
+                <span>C / C++</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. EDUCATION SECTION
+         ====================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Academic Journey
+          </span>
+          <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">Chronological milestones showcasing my academic foundation in science, mathematics, and computer engineering.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div id="education-timeline">
+            <!-- Hydrated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SKILLS SECTION
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            Technical & Soft Skills
+          </span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Competencies</span></h2>
+          <p class="section-subtitle">Realistic proficiencies and active study areas. No arbitrary percentages—only genuine commitment to continuous improvement.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Skill Categories">
+          <button class="filter-tab skill-filter-btn active" data-category="all">All Skills</button>
+          <button class="filter-tab skill-filter-btn" data-category="programming">Programming Languages</button>
+          <button class="filter-tab skill-filter-btn" data-category="ai-ml">AI & Machine Learning</button>
+          <button class="filter-tab skill-filter-btn" data-category="web-dev">Web Development</button>
+          <button class="filter-tab skill-filter-btn" data-category="databases">Databases</button>
+          <button class="filter-tab skill-filter-btn" data-category="dev-tools">Developer Tools</button>
+          <button class="filter-tab skill-filter-btn" data-category="soft-skills">Soft Skills</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Hydrated dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. PROJECTS SECTION
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Proof of Work
+          </span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real, functional software applications built to solve problems, solidify computer science theory, and experiment with cutting-edge tools.</p>
+        </div>
+
+        <!-- Featured Projects Showcase -->
+        <div style="margin-bottom: 48px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+            <span class="pulse-dot"></span>
+            <h3 style="font-size: 1.3rem;">Top Pinned Work</h3>
+          </div>
+          <div class="projects-grid" id="featured-projects">
+            <!-- Featured projects hydrated from data.js -->
+          </div>
+        </div>
+
+        <!-- All Projects Grid -->
+        <div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 24px;">All Practical Work & Utilities</h3>
+          <div class="projects-grid" id="all-projects">
+            <!-- All projects hydrated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. ACHIEVEMENTS SECTION
+         ====================================================================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            Milestones & Honors
+          </span>
+          <h2 class="section-title">Key <span class="text-gradient">Achievements</span></h2>
+          <p class="section-subtitle">Recognition from hackathons, competitive coding platforms, and academic excellence.</p>
+        </div>
+
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Hydrated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. CERTIFICATIONS SECTION
+         ====================================================================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            Verified Credentials
+          </span>
+          <h2 class="section-title">Certifications & <span class="text-gradient">Courses</span></h2>
+          <p class="section-subtitle">Verified coursework completed from recognized institutions, platforms, and industry programs.</p>
+        </div>
+
+        <div class="certifications-grid" id="certifications-grid">
+          <!-- Hydrated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. LEARNING JOURNEY SECTION
+         ====================================================================== -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            Freshman Roadmap
+          </span>
+          <h2 class="section-title">My Learning <span class="text-gradient">Journey</span></h2>
+          <p class="section-subtitle">A transparent timeline showing what I have mastered, what I am currently tackling, and my next technical frontiers.</p>
+        </div>
+
+        <div class="journey-columns" id="journey-columns">
+          <!-- Hydrated dynamically from data.js with 3 columns -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. EXPERIENCE & OPPORTUNITIES
+         ====================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Industry & Practical Experience
+          </span>
+          <h2 class="section-title">Experience & <span class="text-gradient">Opportunities</span></h2>
+          <p class="section-subtitle">Practical hands-on contributions, open-source work, and internship readiness.</p>
+        </div>
+
+        <!-- High Impact Status Notice -->
+        <div class="opportunity-banner">
+          <div class="opportunity-banner-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="opportunity-banner-title">Open For Collaborative Opportunities</h3>
+          <p class="opportunity-banner-text" id="experience-status-notice">
+            Currently building skills and projects while actively seeking internship, hackathon and collaboration opportunities.
+          </p>
+          <a href="#contact" class="btn btn-primary">
+            <span>Get in Touch for Opportunities</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Experience Cards -->
+        <div class="experience-grid" id="experience-grid">
+          <!-- Hydrated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CLUBS & EXTRACURRICULAR ACTIVITIES
+         ====================================================================== -->
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Campus & Leadership
+          </span>
+          <h2 class="section-title">Clubs & <span class="text-gradient">Activities</span></h2>
+          <p class="section-subtitle">Engaging in campus culture, student developer chapters, event volunteering, and peer mentorship.</p>
+        </div>
+
+        <div class="activities-grid" id="activities-grid">
+          <!-- Hydrated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. CODING & ONLINE PROFILES
+         ====================================================================== -->
+    <section class="section" id="profiles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+            Online Presence
+          </span>
+          <h2 class="section-title">Coding & <span class="text-gradient">Profiles</span></h2>
+          <p class="section-subtitle">Explore my verified profiles across competitive programming platforms, repositories, and developer networks.</p>
+        </div>
+
+        <div class="profiles-grid" id="profiles-grid">
+          <!-- Hydrated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         12. RESUME SECTION
+         ====================================================================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-box">
+          <div class="resume-icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Curriculum Vitae / Resume</h3>
+          <p>
+            Looking for a structured overview of my academic records, coursework, projects, and technical proficiencies? View the online summary or download the formal PDF.
+          </p>
+          <div class="resume-actions">
+            <button class="btn btn-primary btn-view-resume">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>View Resume</span>
+            </button>
+            <button class="btn btn-secondary btn-download-resume">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Resume</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         13. CONTACT SECTION
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Get In Touch
+          </span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">Whether you have an internship opportunity, a hackathon project, or just want to chat about AI and technology, my inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Info -->
+          <div class="contact-info-card glass-card">
+            <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Contact Information</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">
+              Feel free to reach out via email or connect with me across professional channels.
+            </p>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <a href="mailto:ayush.dev.contact@gmail.com" class="contact-info-value" style="color: var(--accent-cyan);">
+                  ayush.dev.contact@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">India</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">LinkedIn</div>
+                <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-info-value" style="color: var(--accent-primary);">
+                  linkedin.com/in/ayushkumar
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">GitHub</div>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-info-value" style="color: var(--text-accent);">
+                  github.com/ayushkumar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card glass-card">
+            <h3 style="font-size: 1.35rem; margin-bottom: 20px;">Send a Direct Message</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Internship Inquiry / Project Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Hi Ayush, I saw your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       14. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Ayush Kumar</h3>
+          <p>B.Tech Computer Science & Engineering Student</p>
+          <div class="footer-quote">"Building today, learning every day."</div>
+        </div>
+
+        <div class="hero-socials footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:ayush.dev.contact@gmail.com" class="social-icon-btn" aria-label="Email Ayush">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ayush Kumar. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- Universal Modal Backdrop Container -->
+  <div class="modal-backdrop" id="universal-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content-area" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  
+  <script>
+/* ==========================================================================
+   INLINE BUNDLED DATA & LOGIC
+   ========================================================================== */
+/**
+ * ============================================================================
+ * Ayush Kumar - Portfolio Centralized Data Store
+ * Easily customize your details, projects, skills, education, and links here.
+ * ============================================================================
+ */
+
+const portfolioData = {
+  // 1. Personal Brand Information
+  personal: {
+    name: "Ayush Kumar",
+    role: "B.Tech CSE Student | AI/ML Enthusiast | Developer",
+    statusText: "Learning • Building • Experimenting • Growing",
+    bio: "I am a first-year B.Tech student passionate about technology, programming, artificial intelligence and building practical projects. I am continuously learning new technologies and looking for opportunities to turn ideas into meaningful solutions.",
+    location: "India",
+    email: "ayush.dev.contact@gmail.com", // update with your primary email
+    phone: "+91 [Your Phone Number]",      // update or leave as placeholder
+    github: "https://github.com/",        // update with your github profile
+    linkedin: "https://linkedin.com/in/", // update with your linkedin profile
+    resumeUrl: "#resume-modal"            // opens resume modal or direct link
+  },
+
+  // 2. About Me Data
+  about: {
+    story: "Hello! I am Ayush Kumar, currently in my first year pursuing a Bachelor of Technology in Computer Science and Engineering. My journey into tech began with a deep curiosity for how software transforms ideas into impactful, everyday reality.",
+    background: "As a freshman, I am building strong fundamentals in computing, mathematics, and algorithmic problem solving, while proactively bridging the gap between classroom theory and real-world software development.",
+    interests: "I am particularly fascinated by Artificial Intelligence, Machine Learning systems, modern web technologies, and computational logic. I enjoy breaking down complex problems and turning logic into clean, functional code.",
+    careerAspirations: "My aspiration is to become a high-impact Software Development & AI Engineer, contributing to cutting-edge open-source software, innovative tech products, and intelligent autonomous systems.",
+    strengths: [
+      "Rapid self-directed learning & adaptability",
+      "Disciplined problem solving and analytical thinking",
+      "Effective team collaboration and open communication",
+      "Relentless curiosity to experiment and build"
+    ],
+    motivation: "I believe that the best way to understand technology is to build with it. Every bug solved, algorithm mastered, and project shipped is a step toward creating meaningful solutions.",
+    currentlyExploring: [
+      { name: "Artificial Intelligence", icon: "brain" },
+      { name: "Machine Learning", icon: "cpu" },
+      { name: "Python", icon: "code" },
+      { name: "Data Structures & Algorithms", icon: "git-branch" },
+      { name: "Web Development", icon: "globe" },
+      { name: "Generative AI", icon: "sparkles" }
+    ]
+  },
+
+  // 3. Education Timeline (No fabricated marks; clearly marked placeholders)
+  education: [
+    {
+      degree: "B.Tech in Computer Science & Engineering",
+      institution: "[Your College / University Name]",
+      branch: "Computer Science & Engineering",
+      year: "2025 - 2029 (1st Year)",
+      cgpa: "[Current SGPA/CGPA or In Progress]",
+      subjects: [
+        "Programming for Problem Solving (C/Python)",
+        "Engineering Mathematics & Discrete Structures",
+        "Digital Logic & Computer Systems",
+        "Data Structures & Algorithms (Self-Paced)"
+      ]
+    },
+    {
+      degree: "Senior Secondary (Class XII) - Science",
+      institution: "[Your School / Junior College Name]",
+      branch: "Physics, Chemistry, Mathematics & Computer Science",
+      year: "2023 - 2025",
+      cgpa: "[Your Percentage / Grade Placeholder]",
+      subjects: ["Mathematics", "Physics", "Chemistry", "Computer Science", "English"]
+    },
+    {
+      degree: "Secondary School Certificate (Class X)",
+      institution: "[Your High School Name]",
+      branch: "General Science & Mathematics",
+      year: "2022 - 2023",
+      cgpa: "[Your Percentage / CGPA Placeholder]",
+      subjects: ["Mathematics", "Science", "Social Science", "English", "Languages"]
+    }
+  ],
+
+  // 4. Skills (Realistic levels: Currently Learning, Beginner, Intermediate, Advanced)
+  skills: [
+    // Programming Languages
+    {
+      name: "Python",
+      category: "programming",
+      level: "Intermediate",
+      description: "Core programming, OOP, data processing scripts, automation, and foundational ML libraries.",
+      icon: "python"
+    },
+    {
+      name: "C / C++",
+      category: "programming",
+      level: "Intermediate",
+      description: "Procedural programming, memory management, pointers, and foundational data structures implementation.",
+      icon: "code"
+    },
+    {
+      name: "JavaScript (ES6+)",
+      category: "programming",
+      level: "Beginner",
+      description: "Modern asynchronous JavaScript, DOM manipulation, APIs, and front-end interaction logic.",
+      icon: "javascript"
+    },
+
+    // AI & Machine Learning
+    {
+      name: "Machine Learning Fundamentals",
+      category: "ai-ml",
+      level: "Currently Learning",
+      description: "Supervised and unsupervised learning, regression, classification, and model evaluation metrics.",
+      icon: "brain"
+    },
+    {
+      name: "NumPy & Pandas",
+      category: "ai-ml",
+      level: "Beginner",
+      description: "Vectorized array computations, tabular data wrangling, cleaning, and exploratory data analysis.",
+      icon: "database"
+    },
+    {
+      name: "Generative AI & LLM APIs",
+      category: "ai-ml",
+      level: "Currently Learning",
+      description: "Prompt engineering, integrating Gemini and OpenAI APIs, and building context-aware AI tools.",
+      icon: "sparkles"
+    },
+
+    // Web Development
+    {
+      name: "HTML5 & CSS3",
+      category: "web-dev",
+      level: "Intermediate",
+      description: "Semantic web architecture, Flexbox, CSS Grid, responsive design, and glassmorphism UI.",
+      icon: "layout"
+    },
+    {
+      name: "Frontend UI Architecture",
+      category: "web-dev",
+      level: "Beginner",
+      description: "Component design, responsive UI frameworks, micro-animations, and accessible user experience.",
+      icon: "monitor"
+    },
+
+    // Databases
+    {
+      name: "SQL & Relational Databases",
+      category: "databases",
+      level: "Currently Learning",
+      description: "Database normalization, relational schema design, table queries, joins, and aggregations.",
+      icon: "database"
+    },
+
+    // Developer Tools
+    {
+      name: "Git & GitHub",
+      category: "dev-tools",
+      level: "Intermediate",
+      description: "Version control workflows, commit etiquette, branching, pull requests, and collaborative repository management.",
+      icon: "git-branch"
+    },
+    {
+      name: "VS Code & Development Setup",
+      category: "dev-tools",
+      level: "Advanced",
+      description: "Configuring development environments, debuggers, extensions, linting, and shell integration.",
+      icon: "terminal"
+    },
+    {
+      name: "Command Line / Bash / PowerShell",
+      category: "dev-tools",
+      level: "Intermediate",
+      description: "CLI navigation, file management, automation scripts, and package management workflows.",
+      icon: "terminal"
+    },
+
+    // Soft Skills
+    {
+      name: "Algorithmic Problem Solving",
+      category: "soft-skills",
+      level: "Intermediate",
+      description: "Deconstructing complex engineering problems into manageable sub-tasks with analytical rigor.",
+      icon: "zap"
+    },
+    {
+      name: "Collaboration & Teamwork",
+      category: "soft-skills",
+      level: "Advanced",
+      description: "Cross-functional communication, active listening, and collective ideation in hackathons and college projects.",
+      icon: "users"
+    },
+    {
+      name: "Continuous Self-Learning",
+      category: "soft-skills",
+      level: "Advanced",
+      description: "Rapidly comprehending documentation, technical papers, and self-paced technical courses.",
+      icon: "book-open"
+    }
+  ],
+
+  // 5. Projects (Rich interactive portfolio projects)
+  projects: [
+    {
+      id: "project-1",
+      name: "AI Study Mentor & Concept Summarizer",
+      featured: true,
+      category: "ai",
+      image: "assets/project-ai-mentor.jpg",
+      shortDescription: "An intelligent web application that parses complex textbook chapters and generates structured study roadmaps, key takeaways, and flashcards using AI APIs.",
+      problemSolved: "First-year engineering students frequently struggle with dense academic textbooks and technical papers. This tool automates concept extraction and active recall quiz generation.",
+      technologies: ["Python", "Gemini API", "JavaScript", "HTML5/CSS3", "Markdown"],
+      myContribution: "Architected the backend prompt engineering pipeline, designed the interactive client-side dashboard, and implemented markdown parsing with responsive UI.",
+      keyFeatures: [
+        "Instant document & concept summarization with hierarchical bullets",
+        "Automated active-recall quiz and flashcard generator",
+        "Export study roadmaps to clean PDF or Markdown format",
+        "Responsive dark-first dashboard with instant response streaming"
+      ],
+      liveDemo: "https://ayush-study-ai-demo.netlify.app", // sample demo link
+      github: "https://github.com/ayushkumar/ai-study-mentor",
+      details: {
+        architecture: "Client-side frontend interfacing with asynchronous backend API worker with rate limiting and prompt safety formatting.",
+        learnings: "Deepened practical understanding of LLM prompt optimization, structured JSON output parsing, and error-resilient client-side state handling."
+      }
+    },
+    {
+      id: "project-2",
+      name: "Interactive Sorting & Search Algorithm Visualizer",
+      featured: true,
+      category: "algorithms",
+      image: "assets/project-algo-visualizer.jpg",
+      shortDescription: "A high-performance interactive visualizer demonstrating sorting and searching algorithms with real-time speed control and comparison counters.",
+      problemSolved: "Abstract data structures and sorting algorithms are difficult to grasp from static code alone. Visualizing comparisons and swaps in real time accelerates intuition.",
+      technologies: ["JavaScript (ES6)", "Canvas / CSS Animations", "Data Structures", "Algorithms"],
+      myContribution: "Implemented core sorting algorithms (Merge Sort, Quick Sort, Bubble Sort, Binary Search) with step-by-step visual pause, step, and audio-frequency feedback.",
+      keyFeatures: [
+        "Dynamic array size and execution speed adjusters",
+        "Live swap counter and comparison metrics tracker",
+        "Detailed time and space complexity explanations on hover",
+        "Step-by-step execution mode for educational study"
+      ],
+      liveDemo: "https://ayushkumar-algo-visualizer.vercel.app",
+      github: "https://github.com/ayushkumar/algo-visualizer",
+      details: {
+        architecture: "Asynchronous generator function pipeline yielding execution frames to render smoothly at 60 FPS on HTML5 Canvas.",
+        learnings: "Mastered JavaScript async/await generator mechanics, execution timing, and time-space complexity tradeoffs."
+      }
+    },
+    {
+      id: "project-3",
+      name: "DevLog: Student Productivity & Habit Tracker",
+      featured: false,
+      category: "web",
+      image: "assets/project-devlog.jpg",
+      shortDescription: "A minimalist, offline-capable developer habit tracker and daily coding journal with streak visualization and local storage persistence.",
+      problemSolved: "Helps engineering students maintain consistency across coding problem practice, course revisions, and project development without bloated subscriptions.",
+      technologies: ["JavaScript", "HTML5", "CSS3 Glassmorphism", "LocalStorage API"],
+      myContribution: "Created the entire user experience from scratch, designing sleek glassmorphic components, streak calculations, and data backup/export JSON utility.",
+      keyFeatures: [
+        "GitHub-style annual contribution streak heatmap",
+        "Pomodoro timer with audio cues and session tagging",
+        "Zero-dependency local persistence with JSON import/export",
+        "Distraction-free focus mode with ambient dark theme"
+      ],
+      liveDemo: null, // Note: no live demo, will hide button automatically!
+      github: "https://github.com/ayushkumar/devlog-tracker",
+      details: {
+        architecture: "Clean vanilla MVC pattern storing structured task state in browser LocalStorage with automatic schema validation.",
+        learnings: "Reinforced semantic state management, persistent client storage, and accessible UI interactions."
+      }
+    },
+    {
+      id: "project-4",
+      name: "CLI File Analyzer & Codebase Metrics Tool",
+      featured: false,
+      category: "tools",
+      image: "assets/project-cli-metrics.jpg",
+      shortDescription: "A lightweight command-line tool built in Python to inspect directories, compute total lines of code, analyze file type distributions, and detect TODOs.",
+      problemSolved: "Quickly gives developers a comprehensive snapshot of code metrics, duplicate files, and pending task comments across a project directory.",
+      technologies: ["Python", "Argparse", "Regex", "File I/O"],
+      myContribution: "Developed the CLI argument parser, recursive directory crawler, syntax-aware comment scanners, and terminal table formatting.",
+      keyFeatures: [
+        "Recursively scans projects ignoring .git, node_modules, and virtualenvs",
+        "Generates pretty-printed terminal summaries with colors",
+        "Extracts pending TODO, FIXME, and HACK annotations with line numbers",
+        "Export metrics report to CSV or Markdown format"
+      ],
+      liveDemo: null,
+      github: "https://github.com/ayushkumar/cli-code-metrics",
+      details: {
+        architecture: "Modular Python package utilizing standard library modules for optimal portability without external pip dependencies.",
+        learnings: "Gained hands-on experience in recursive algorithms, regex compilation, and robust file stream error handling."
+      }
+    }
+  ],
+
+  // 6. Achievements (Realistic placeholders ready to be customized)
+  achievements: [
+    {
+      title: "Participant & Finalist - University Freshers Hackathon",
+      organization: "[College Technical Council / Innovation Club]",
+      date: "2025 / 2026",
+      category: "Hackathons",
+      description: "Collaborated in a 4-member freshman team to prototype an AI-driven campus accessibility and study-group matching tool within 24 hours.",
+      proofUrl: "#proof-modal"
+    },
+    {
+      title: "Top Performer - First Year Induction Coding Challenge",
+      organization: "[Department of Computer Science & Engineering]",
+      date: "2025",
+      category: "Coding Competitions",
+      description: "Demonstrated strong computational thinking and solved algorithmic problem sets focusing on basic math, logic, and arrays.",
+      proofUrl: "#proof-modal"
+    },
+    {
+      title: "Academic Excellence Recognition - High School",
+      organization: "[Your Previous High School / Board Name]",
+      date: "2025",
+      category: "Academic Achievements",
+      description: "Recognized for consistent academic diligence, disciplined problem solving, and science project presentations.",
+      proofUrl: "#proof-modal"
+    },
+    {
+      title: "Active Contributor - Open Source / Campus Tech Community",
+      organization: "[Open Source / College Club]",
+      date: "2025 - Present",
+      category: "Leadership",
+      description: "Actively assisting fellow first-year peers with Git setup, Linux command line essentials, and foundational programming logic.",
+      proofUrl: "#proof-modal"
+    }
+  ],
+
+  // 7. Certifications (With view certificate modal & verification links)
+  certifications: [
+    {
+      name: "Python for Data Science, AI & Development",
+      organization: "Coursera / IBM / DeepLearning.AI",
+      date: "2025 / 2026",
+      topics: "Python, OOP, Data Structures, Web Scraping, Working with REST APIs",
+      credentialId: "CERT-PY-2026-XXXX",
+      image: "assets/cert-python-ds.jpg",
+      verifyUrl: "https://coursera.org/verify/example"
+    },
+    {
+      name: "Introduction to Computer Science & Programming",
+      organization: "edX / Harvard CS50 / FreeCodeCamp",
+      date: "2025 / 2026",
+      topics: "C, Python, Algorithms, Memory Allocation, Arrays, Big-O Notation",
+      credentialId: "CERT-CS50-XXXX",
+      verifyUrl: "https://cs50.harvard.edu/certificates/example"
+    },
+    {
+      name: "Git & GitHub Version Control Masterclass",
+      organization: "Udemy / GitHub Education",
+      date: "2025",
+      topics: "Branching, Merging, Rebase, Pull Requests, Resolving Conflicts, CI/CD basics",
+      credentialId: "UC-GIT-2025-XXXX",
+      verifyUrl: "https://udemy.com/certificate/example"
+    }
+  ],
+
+  // 8. Learning Journey (Tailored for a 1st-Year B.Tech Student)
+  journey: {
+    stage1: {
+      title: "Solid Foundations (What I Have Learned)",
+      icon: "check-circle",
+      items: [
+        {
+          name: "Structured Programming (C & Python)",
+          desc: "Mastered variables, loops, conditional branching, functions, modular architecture, and file I/O."
+        },
+        {
+          name: "Git & Collaborative Workflow",
+          desc: "Command-line version control, multi-branching pipelines, repository hygiene, and pull request reviews."
+        },
+        {
+          name: "Web Fundamentals (HTML5, Modern CSS, ES6)",
+          desc: "Responsive layout architecture, glassmorphism UI, DOM manipulation, and asynchronous JavaScript."
+        },
+        {
+          name: "Computational Thinking & Basic Math",
+          desc: "Discrete mathematics, boolean logic, matrix operations, and algorithm trace tables."
+        }
+      ]
+    },
+    stage2: {
+      title: "Currently Learning (Active Focus)",
+      icon: "compass",
+      highlight: true,
+      items: [
+        {
+          name: "Data Structures & Algorithms in C++/Python",
+          desc: "Actively mastering Linked Lists, Stacks, Queues, Trees, Recursion, and time/space complexity analysis."
+        },
+        {
+          name: "Machine Learning & Mathematical Foundations",
+          desc: "Linear algebra, multivariable calculus, probability, and foundational supervised learning algorithms."
+        },
+        {
+          name: "Applied Generative AI & Tool Integration",
+          desc: "Prompt engineering frameworks, embedding models, vector search, and Gemini API integration."
+        },
+        {
+          name: "Competitive Programming Practice",
+          desc: "Solving daily challenges on LeetCode and CodeChef to hone edge-case handling and speed."
+        }
+      ]
+    },
+    stage3: {
+      title: "Next Milestones (What I Plan To Learn)",
+      icon: "arrow-up-right",
+      items: [
+        {
+          name: "Advanced DSA (Graphs, Dynamic Programming)",
+          desc: "Graph traversal (BFS/DFS), shortest path algorithms, and dynamic programming memoization."
+        },
+        {
+          name: "Deep Learning & Neural Networks (PyTorch)",
+          desc: "Building custom neural network architectures, CNNs for computer vision, and Transformer mechanics."
+        },
+        {
+          name: "Full-Stack Web Architectures & REST APIs",
+          desc: "Developing production-grade backends with Node.js/FastAPI, database migrations, and authentication."
+        },
+        {
+          name: "System Design Fundamentals & Cloud Deployment",
+          desc: "Microservices architecture, Docker containerization, and cloud deployment pipelines (AWS/GCP)."
+        }
+      ]
+    }
+  },
+
+  // 9. Experience & Opportunities
+  experience: {
+    statusNotice: "Currently building skills and projects while actively seeking internship, hackathon and collaboration opportunities.",
+    entries: [
+      // When you secure an internship, replace this template with your real organization!
+      {
+        role: "Open Source Contributor & Tech Explorer",
+        organization: "Student Community Projects / Hackathons",
+        duration: "2025 - Present",
+        responsibilities: [
+          "Building open-source tools and educational repositories for undergraduate peers.",
+          "Participating in college coding hackathons, ideating solutions, and writing clean documentation.",
+          "Actively testing developer tools and contributing documentation fixes to beginner-friendly repositories."
+        ],
+        achievements: "Built and published 4+ working open-source projects; active participant in technical community discussions.",
+        technologies: ["Python", "JavaScript", "Git", "Markdown", "REST APIs"]
+      }
+    ]
+  },
+
+  // 10. Clubs & Extracurricular Activities
+  activities: [
+    {
+      role: "Active Technical Member",
+      organization: "College Coding & Developers Club",
+      duration: "2025 - Present",
+      description: "Participating in weekly peer programming sessions, algorithm walkthroughs, and hackathon brainstorming.",
+      contribution: "Helped organize beginner Git workshops and shared notes on problem-solving approaches."
+    },
+    {
+      role: "Student Member",
+      organization: "AI / Robotics Student Chapter",
+      duration: "2025 - Present",
+      description: "Engaging in seminars and hands-on lab sessions on machine learning basics, computer vision, and hardware-software integration.",
+      contribution: "Collaborated on team discussions analyzing recent advancements in multimodal AI models."
+    },
+    {
+      role: "Event Volunteer",
+      organization: "Annual College Technical & Cultural Fest",
+      duration: "2025 / 2026",
+      description: "Assisted the organizing committee in event coordination, participant registrations, and technical logistics.",
+      contribution: "Managed on-ground coordination for coding and gaming competition tracks smoothly."
+    }
+  ],
+
+  // 11. Coding & Online Profiles
+  profiles: [
+    {
+      platform: "GitHub",
+      username: "@ayushkumar",
+      description: "Open source repositories, personal projects, and code commits.",
+      url: "https://github.com/", // Add your username
+      badge: "Projects & Code",
+      icon: "github"
+    },
+    {
+      platform: "LinkedIn",
+      username: "Ayush Kumar",
+      description: "Professional networking, hackathon updates, and career journey.",
+      url: "https://linkedin.com/in/", // Add your profile slug
+      badge: "Networking",
+      icon: "linkedin"
+    },
+    {
+      platform: "LeetCode",
+      username: "ayush_codes",
+      description: "Algorithmic problem solving and data structure challenges.",
+      url: "https://leetcode.com/", // Add your handle
+      badge: "DSA Practice",
+      icon: "code"
+    },
+    {
+      platform: "CodeChef",
+      username: "ayush_dev",
+      description: "Competitive programming contests and rated challenges.",
+      url: "https://www.codechef.com/", // Add your handle
+      badge: "Contests",
+      icon: "terminal"
+    },
+    {
+      platform: "HackerRank",
+      username: "ayush_k",
+      description: "Domain skill badges in Python, Problem Solving, and C++.",
+      url: "https://www.hackerrank.com/", // Add your handle
+      badge: "Certifications",
+      icon: "award"
+    },
+    {
+      platform: "Kaggle",
+      username: "ayushkumar_ml",
+      description: "Data science notebooks, ML datasets, and predictive modeling.",
+      url: "https://www.kaggle.com/", // Add your handle
+      badge: "Machine Learning",
+      icon: "database"
+    }
+  ]
+};
+
+// Export to window object for zero-dependency browser access
+window.portfolioData = portfolioData;
+
+
+/**
+ * ============================================================================
+ * Ayush Kumar Portfolio - Main Interactivity & UI Controllers
+ * Features:
+ *  - Theme Toggle (Dark / Light with LocalStorage persistence)
+ *  - Dynamic section hydration from data.js
+ *  - Scrollspy with active navigation indicator
+ *  - Project filtering & interactive detail modals
+ *  - Skill category filtering
+ *  - Certificate modal viewer
+ *  - Interactive contact form with client-side validation & toast feedback
+ *  - Back-to-top floating button & scroll progress bar
+ *  - Mobile responsive drawer menu
+ * ============================================================================
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  // SVG Icon Map for high-performance crisp icons
+  const icons = {
+    python: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3h10V7a5 5 0 0 0-5-5z"></path><path d="M12 22a5 5 0 0 0 5-5v-3H7v3a5 5 0 0 0 5 5z"></path><circle cx="9" cy="5" r="1"></circle><circle cx="15" cy="19" r="1"></circle></svg>`,
+    code: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>`,
+    javascript: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M16 8v8a2 2 0 0 1-2 2h-1"></path><path d="M8 15a2 2 0 0 0 2 2 2 2 0 0 0 2-2v-4"></path></svg>`,
+    brain: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"></path></svg>`,
+    sparkles: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path></svg>`,
+    database: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>`,
+    layout: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>`,
+    monitor: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>`,
+    "git-branch": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>`,
+    terminal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>`,
+    zap: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>`,
+    users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`,
+    "book-open": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>`,
+    cpu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>`,
+    globe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>`,
+    external: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>`,
+    github: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>`,
+    linkedin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>`,
+    award: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>`,
+    "check-circle": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`,
+    compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>`,
+    "arrow-up-right": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" x2="17" y1="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>`
+  };
+
+  const getIcon = (key) => icons[key] || icons.code;
+
+  // --------------------------------------------------------------------------
+  // 1. Theme Management (Dark / Light)
+  // --------------------------------------------------------------------------
+  const themeToggle = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('ayush_portfolio_theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('ayush_portfolio_theme', newTheme);
+      showToast(`Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} theme`);
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 2. Navigation, Sticky Header & Scroll Progress
+  // --------------------------------------------------------------------------
+  const navbar = document.getElementById('navbar');
+  const scrollProgress = document.getElementById('scroll-progress');
+  const backToTopBtn = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    
+    // Navbar shadow & background
+    if (scrollY > 40) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Scroll progress bar
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (docHeight > 0 && scrollProgress) {
+      const progressPercent = (scrollY / docHeight) * 100;
+      scrollProgress.style.width = `${progressPercent}%`;
+    }
+
+    // Back to top visibility
+    if (backToTopBtn) {
+      if (scrollY > 350) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    }
+
+    // Scrollspy active state
+    updateScrollspy();
+  });
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Mobile Hamburger & Drawer
+  const hamburger = document.getElementById('hamburger');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+  const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+
+  function toggleMobileMenu() {
+    hamburger.classList.toggle('active');
+    mobileNavDrawer.classList.toggle('active');
+    mobileNavOverlay.classList.toggle('active');
+    document.body.style.overflow = mobileNavDrawer.classList.contains('active') ? 'hidden' : '';
+  }
+
+  function closeMobileMenu() {
+    hamburger.classList.remove('active');
+    mobileNavDrawer.classList.remove('active');
+    mobileNavOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger) hamburger.addEventListener('click', toggleMobileMenu);
+  if (mobileNavOverlay) mobileNavOverlay.addEventListener('click', closeMobileMenu);
+
+  // Close mobile drawer when clicking any nav link
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // Scrollspy logic
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function updateScrollspy() {
+    const scrollPosition = window.scrollY + 160;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 3. Hydrate Education Timeline
+  // --------------------------------------------------------------------------
+  const educationTimeline = document.getElementById('education-timeline');
+  if (educationTimeline && portfolioData.education) {
+    educationTimeline.innerHTML = portfolioData.education.map(item => `
+      <div class="timeline-item">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-header">
+            <h3 class="timeline-degree">${item.degree}</h3>
+            <span class="timeline-year">${item.year}</span>
+          </div>
+          <div class="timeline-institution">${item.institution}</div>
+          <div class="timeline-meta">
+            <span class="meta-chip">Branch: ${item.branch}</span>
+            <span class="meta-chip">Score: ${item.cgpa}</span>
+          </div>
+          <div class="timeline-subjects">
+            <div class="subjects-label">Relevant Focus & Coursework</div>
+            <div class="subject-tags">
+              ${item.subjects.map(subj => `<span class="subject-tag">${subj}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // --------------------------------------------------------------------------
+  // 4. Hydrate Skills Section & Filtering
+  // --------------------------------------------------------------------------
+  const skillsGrid = document.getElementById('skills-grid');
+  const skillFilters = document.querySelectorAll('.skill-filter-btn');
+
+  function renderSkills(filter = 'all') {
+    if (!skillsGrid || !portfolioData.skills) return;
+
+    const filtered = filter === 'all' 
+      ? portfolioData.skills 
+      : portfolioData.skills.filter(s => s.category === filter);
+
+    skillsGrid.innerHTML = filtered.map(skill => {
+      const levelClass = `level-${skill.level.toLowerCase().replace(/\s+/g, '-')}`;
+      return `
+        <div class="skill-card glass-card" data-category="${skill.category}">
+          <div>
+            <div class="skill-header">
+              <div class="skill-icon-wrapper">
+                ${getIcon(skill.icon)}
+              </div>
+              <span class="skill-level-badge ${levelClass}">${skill.level}</span>
+            </div>
+            <h4 class="skill-name">${skill.name}</h4>
+          </div>
+          <p class="skill-desc">${skill.description}</p>
+        </div>
+      `;
+    }).join('');
+  }
+
+  renderSkills('all');
+
+  skillFilters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      skillFilters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.getAttribute('data-category');
+      renderSkills(cat);
+    });
+  });
+
+  // --------------------------------------------------------------------------
+  // 5. Hydrate Projects & Featured Showcase
+  // --------------------------------------------------------------------------
+  const featuredProjectsContainer = document.getElementById('featured-projects');
+  const allProjectsContainer = document.getElementById('all-projects');
+
+  function renderProjects() {
+    if (!portfolioData.projects) return;
+
+    const featured = portfolioData.projects.filter(p => p.featured);
+    const regular = portfolioData.projects;
+
+    if (featuredProjectsContainer) {
+      featuredProjectsContainer.innerHTML = featured.map(createProjectCardMarkup).join('');
+    }
+
+    if (allProjectsContainer) {
+      allProjectsContainer.innerHTML = regular.map(createProjectCardMarkup).join('');
+    }
+
+    // Attach View Details Click Listeners
+    document.querySelectorAll('.btn-view-project').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const projectId = btn.getAttribute('data-id');
+        openProjectModal(projectId);
+      });
+    });
+  }
+
+  function createProjectCardMarkup(project) {
+    const liveDemoBtn = project.liveDemo 
+      ? `<a href="${project.liveDemo}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+           <span>Live Demo</span> ${getIcon('external')}
+         </a>`
+      : '';
+
+    const featuredTag = project.featured ? `<div class="featured-badge">Featured</div>` : '';
+
+    const thumbnailMarkup = project.image 
+      ? `<img src="${project.image}" alt="${project.name}" class="project-thumbnail-img" loading="lazy">`
+      : `<div class="project-thumbnail-graphic">
+           ${getIcon(project.category === 'ai' ? 'brain' : (project.category === 'algorithms' ? 'git-branch' : 'code'))}
+           <span style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600; color: var(--text-accent);">
+             ${project.category.toUpperCase()}
+           </span>
+         </div>`;
+
+    return `
+      <div class="project-card glass-card" data-id="${project.id}">
+        ${featuredTag}
+        <div class="project-thumbnail">
+          ${thumbnailMarkup}
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">${project.name}</h3>
+          <p class="project-desc">${project.shortDescription}</p>
+
+          <div class="project-info-block">
+            <div class="info-label">Problem Solved</div>
+            <div class="info-content">${project.problemSolved}</div>
+          </div>
+
+          <div class="project-tech-stack">
+            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+          </div>
+
+          <div class="project-actions">
+            ${liveDemoBtn}
+            <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              ${getIcon('github')} <span>GitHub</span>
+            </a>
+            <button class="btn btn-sm btn-outline btn-view-project" data-id="${project.id}">
+              <span>Details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  renderProjects();
+
+  // --------------------------------------------------------------------------
+  // 6. Hydrate Achievements
+  // --------------------------------------------------------------------------
+  const achievementsGrid = document.getElementById('achievements-grid');
+  if (achievementsGrid && portfolioData.achievements) {
+    achievementsGrid.innerHTML = portfolioData.achievements.map((item, index) => `
+      <div class="achievement-card glass-card">
+        <div>
+          <div class="achievement-category">
+            ${getIcon('award')} <span>${item.category}</span>
+          </div>
+          <h4 class="achievement-title">${item.title}</h4>
+          <div class="achievement-event">${item.organization}</div>
+          <div class="achievement-date">${item.date}</div>
+          <p class="achievement-desc">${item.description}</p>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-outline btn-proof-modal" data-index="${index}">
+            <span>View Details / Proof</span>
+          </button>
+        </div>
+      </div>
+    `).join('');
+
+    document.querySelectorAll('.btn-proof-modal').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const index = btn.getAttribute('data-index');
+        const item = portfolioData.achievements[index];
+        openUniversalModal(`
+          <h3 style="font-size: 1.5rem; margin-bottom: 12px;">${item.title}</h3>
+          <p style="color: var(--accent-cyan); font-weight: 600; margin-bottom: 8px;">${item.organization}</p>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Issued: ${item.date} | ${item.category}</p>
+          <div style="background: rgba(255,255,255,0.04); padding: 18px; border-radius: var(--radius-md); border-left: 3px solid var(--accent-amber); margin-bottom: 24px;">
+            <p style="color: var(--text-secondary); line-height: 1.6;">${item.description}</p>
+          </div>
+          <div style="display: flex; gap: 12px; justify-content: flex-end;">
+            <button class="btn btn-sm btn-secondary modal-close-trigger">Close</button>
+          </div>
+        `);
+      });
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 7. Hydrate Certifications
+  // --------------------------------------------------------------------------
+  const certsGrid = document.getElementById('certifications-grid');
+  if (certsGrid && portfolioData.certifications) {
+    certsGrid.innerHTML = portfolioData.certifications.map((cert, index) => `
+      <div class="cert-card glass-card">
+        <div>
+          <div class="cert-header">
+            <div class="cert-icon-badge">
+              ${getIcon('award')}
+            </div>
+            <span class="cert-date">${cert.date}</span>
+          </div>
+          <h4 class="cert-name">${cert.name}</h4>
+          <div class="cert-issuer">${cert.organization}</div>
+          <div class="cert-topics">
+            <div class="subjects-label">Skills / Topics Covered</div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">${cert.topics}</p>
+          </div>
+        </div>
+        <div>
+          <div class="cert-credential-id">Credential ID: ${cert.credentialId}</div>
+          <button class="btn btn-sm btn-primary btn-view-cert" data-index="${index}" style="width: 100%;">
+            <span>View Certificate</span> ${getIcon('external')}
+          </button>
+        </div>
+      </div>
+    `).join('');
+
+    document.querySelectorAll('.btn-view-cert').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const index = btn.getAttribute('data-index');
+        const cert = portfolioData.certifications[index];
+        const certImageMarkup = cert.image 
+          ? `<div style="max-height: 260px; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--border-card); margin-bottom: 20px; box-shadow: var(--shadow-md);">
+               <img src="${cert.image}" alt="${cert.name}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+             </div>`
+          : '';
+
+        openUniversalModal(`
+          ${certImageMarkup}
+          <div style="text-align: center; margin-bottom: 24px;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--gradient-subtle); border: 1px solid var(--border-hover); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: var(--accent-primary);">
+              ${getIcon('award')}
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 6px;">${cert.name}</h3>
+            <p style="color: var(--accent-cyan); font-weight: 600;">${cert.organization}</p>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 20px; margin-bottom: 24px;">
+            <div style="margin-bottom: 12px;">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Completion Date</span>
+              <p style="font-weight: 600; color: var(--text-primary);">${cert.date}</p>
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Topics Covered</span>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">${cert.topics}</p>
+            </div>
+            <div>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Credential Identifier</span>
+              <p style="font-family: var(--font-mono); color: var(--text-accent);">${cert.credentialId}</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; justify-content: flex-end;">
+            <button class="btn btn-sm btn-secondary modal-close-trigger">Close</button>
+            <a href="${cert.verifyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <span>Open Verification Link</span> ${getIcon('external')}
+            </a>
+          </div>
+        `);
+      });
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 8. Hydrate Learning Journey
+  // --------------------------------------------------------------------------
+  const journeyColumnsContainer = document.getElementById('journey-columns');
+  if (journeyColumnsContainer && portfolioData.journey) {
+    const { stage1, stage2, stage3 } = portfolioData.journey;
+    const stages = [stage1, stage2, stage3];
+
+    journeyColumnsContainer.innerHTML = stages.map(stage => `
+      <div class="journey-col">
+        <div class="journey-col-header ${stage.highlight ? 'active-col' : ''}">
+          <div class="journey-col-icon" style="background: var(--gradient-subtle); color: ${stage.highlight ? 'var(--accent-primary)' : 'var(--accent-cyan)'};">
+            ${getIcon(stage.icon)}
+          </div>
+          <div>
+            <div class="journey-col-title">${stage.title}</div>
+            ${stage.highlight ? `<span class="status-badge" style="margin-top: 4px; font-size: 0.72rem; padding: 2px 8px;"><span class="pulse-dot"></span> Active Focus</span>` : ''}
+          </div>
+        </div>
+        ${stage.items.map(item => `
+          <div class="journey-card glass-card ${stage.highlight ? 'active-learning-card' : ''}">
+            <div class="journey-item-title">
+              <span>${item.name}</span>
+            </div>
+            <p class="journey-item-desc">${item.desc}</p>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+  }
+
+  // --------------------------------------------------------------------------
+  // 9. Hydrate Experience & Opportunities
+  // --------------------------------------------------------------------------
+  const expStatusNotice = document.getElementById('experience-status-notice');
+  const expGrid = document.getElementById('experience-grid');
+
+  if (expStatusNotice && portfolioData.experience) {
+    expStatusNotice.textContent = portfolioData.experience.statusNotice;
+  }
+
+  if (expGrid && portfolioData.experience && portfolioData.experience.entries) {
+    expGrid.innerHTML = portfolioData.experience.entries.map(item => `
+      <div class="experience-card glass-card">
+        <h4 class="experience-role">${item.role}</h4>
+        <div class="experience-org">${item.organization}</div>
+        <div class="experience-duration">${item.duration}</div>
+        <ul class="experience-responsibilities">
+          ${item.responsibilities.map(r => `<li>${r}</li>`).join('')}
+        </ul>
+        <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
+          <div class="subjects-label">Key Highlight</div>
+          <p style="font-size: 0.88rem; color: var(--text-primary); margin-bottom: 12px;">${item.achievements}</p>
+          <div class="subject-tags">
+            ${item.technologies.map(t => `<span class="subject-tag">${t}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // --------------------------------------------------------------------------
+  // 10. Hydrate Clubs & Activities
+  // --------------------------------------------------------------------------
+  const activitiesGrid = document.getElementById('activities-grid');
+  if (activitiesGrid && portfolioData.activities) {
+    activitiesGrid.innerHTML = portfolioData.activities.map(act => `
+      <div class="activity-card glass-card">
+        <div>
+          <div class="activity-header">
+            <h4 class="activity-role">${act.role}</h4>
+          </div>
+          <div class="activity-org">${act.organization}</div>
+          <div class="activity-duration">${act.duration}</div>
+          <p class="activity-desc">${act.description}</p>
+        </div>
+        <div class="activity-contribution">
+          <strong style="color: var(--accent-emerald); font-size: 0.8rem; text-transform: uppercase; font-family: var(--font-mono); display: block; margin-bottom: 2px;">Key Contribution:</strong>
+          ${act.contribution}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // --------------------------------------------------------------------------
+  // 11. Hydrate Online Profiles
+  // --------------------------------------------------------------------------
+  const profilesGrid = document.getElementById('profiles-grid');
+  if (profilesGrid && portfolioData.profiles) {
+    profilesGrid.innerHTML = portfolioData.profiles.map(p => `
+      <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="profile-card glass-card">
+        <div class="profile-icon">
+          ${getIcon(p.icon)}
+        </div>
+        <div class="profile-info">
+          <h4>${p.platform}</h4>
+          <p>${p.username}</p>
+          <span style="display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: var(--radius-pill); background: var(--gradient-subtle); color: var(--text-accent); margin-top: 4px; border: 1px solid var(--border-hover);">
+            ${p.badge}
+          </span>
+        </div>
+        <div class="profile-arrow">
+          ${getIcon('arrow-up-right')}
+        </div>
+      </a>
+    `).join('');
+  }
+
+  // --------------------------------------------------------------------------
+  // 12. Modal Handlers
+  // --------------------------------------------------------------------------
+  const modalBackdrop = document.getElementById('universal-modal');
+  const modalBody = document.getElementById('modal-body');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+
+  function openUniversalModal(contentHtml) {
+    if (!modalBackdrop || !modalBody) return;
+    modalBody.innerHTML = contentHtml;
+    modalBackdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    // Hook internal close buttons
+    modalBody.querySelectorAll('.modal-close-trigger').forEach(btn => {
+      btn.addEventListener('click', closeUniversalModal);
+    });
+  }
+
+  function closeUniversalModal() {
+    if (!modalBackdrop) return;
+    modalBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeUniversalModal);
+
+  if (modalBackdrop) {
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) {
+        closeUniversalModal();
+      }
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalBackdrop && modalBackdrop.classList.contains('open')) {
+      closeUniversalModal();
+    }
+  });
+
+  function openProjectModal(projectId) {
+    const project = portfolioData.projects.find(p => p.id === projectId);
+    if (!project) return;
+
+    const liveDemoBtn = project.liveDemo 
+      ? `<a href="${project.liveDemo}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+           <span>Live Demo</span> ${getIcon('external')}
+         </a>`
+      : '';
+
+    const modalImageMarkup = project.image 
+      ? `<div style="width: 100%; max-height: 240px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border-card);">
+           <img src="${project.image}" alt="${project.name}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+         </div>`
+      : '';
+
+    openUniversalModal(`
+      ${modalImageMarkup}
+      <div style="margin-bottom: 20px;">
+        <span class="section-tag" style="margin-bottom: 8px;">${project.category.toUpperCase()} PROJECT</span>
+        <h3 style="font-size: 1.6rem; margin-bottom: 10px;">${project.name}</h3>
+        <p style="color: var(--text-secondary); line-height: 1.6;">${project.shortDescription}</p>
+      </div>
+
+      <div style="margin-bottom: 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 18px;">
+        <h4 style="font-size: 1rem; color: var(--accent-cyan); margin-bottom: 6px;">Problem Solved</h4>
+        <p style="font-size: 0.92rem; color: var(--text-secondary);">${project.problemSolved}</p>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <h4 style="font-size: 1rem; margin-bottom: 10px;">Key Features</h4>
+        <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">
+          ${project.keyFeatures.map(feat => `<li style="margin-bottom: 4px;">${feat}</li>`).join('')}
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 20px; background: rgba(255,255,255,0.03); border-radius: var(--radius-md); padding: 16px;">
+        <h4 style="font-size: 0.95rem; color: var(--accent-primary); margin-bottom: 6px;">My Contribution & Learnings</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">${project.myContribution}</p>
+        <p style="font-size: 0.88rem; color: var(--text-muted); font-style: italic;">Learnings: ${project.details.learnings}</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h4 style="font-size: 0.95rem; margin-bottom: 8px;">Tech Stack</h4>
+        <div class="project-tech-stack">
+          ${project.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; justify-content: flex-end; border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+        <button class="btn btn-sm btn-secondary modal-close-trigger">Close</button>
+        <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+          ${getIcon('github')} <span>GitHub Repo</span>
+        </a>
+        ${liveDemoBtn}
+      </div>
+    `);
+  }
+
+  // Resume Modal & Buttons
+  const viewResumeBtns = document.querySelectorAll('.btn-view-resume');
+  viewResumeBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openUniversalModal(`
+        <div style="text-align: center; margin-bottom: 24px;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-subtle); border: 1px solid var(--border-hover); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; color: var(--accent-primary);">
+            ${getIcon('award')}
+          </div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 4px;">Ayush Kumar - Professional Resume</h3>
+          <p style="color: var(--text-secondary);">B.Tech Computer Science & Engineering (1st Year)</p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px;">
+          <h4 style="font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 8px;">Executive Summary</h4>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+            ${portfolioData.personal.bio}
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.88rem; color: var(--text-secondary);">
+            <div><strong>Education:</strong> B.Tech CSE (2025-2029)</div>
+            <div><strong>Primary Focus:</strong> AI/ML & Core Software Dev</div>
+            <div><strong>Location:</strong> ${portfolioData.personal.location}</div>
+            <div><strong>Email:</strong> ${portfolioData.personal.email}</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end;">
+          <button class="btn btn-sm btn-secondary modal-close-trigger">Close</button>
+          <a href="#download-resume" class="btn btn-sm btn-primary btn-download-resume-action">
+            <span>Download Official PDF</span>
+          </a>
+        </div>
+      `);
+
+      document.querySelector('.btn-download-resume-action')?.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        showToast("Resume download initiated. Place your custom PDF in assets/resume.pdf.");
+        closeUniversalModal();
+      });
+    });
+  });
+
+  // Download Resume Trigger buttons
+  document.querySelectorAll('.btn-download-resume').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      showToast("Resume download requested! Connect your PDF file in data.js.");
+    });
+  });
+
+  // --------------------------------------------------------------------------
+  // 13. Contact Form & Client-Side Validation
+  // --------------------------------------------------------------------------
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const subject = document.getElementById('contact-subject').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+
+      if (!name || !email || !message) {
+        showToast("Please fill in your Name, Email, and Message.", "error");
+        return;
+      }
+
+      // Email format regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showToast("Please enter a valid email address.", "error");
+        return;
+      }
+
+      // Successful simulated dispatch
+      showToast(`Thank you, ${name}! Your message has been sent successfully.`);
+      contactForm.reset();
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 14. Toast Notification Utility
+  // --------------------------------------------------------------------------
+  function showToast(message, type = 'success') {
+    let container = document.getElementById('toast-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'toast-container';
+      container.className = 'toast-container';
+      document.body.appendChild(container);
+    }
+
+    const toast = document.createElement('div');
+    toast.className = `toast ${type === 'success' ? 'toast-success' : 'toast-error'}`;
+    toast.innerHTML = `
+      ${type === 'success' ? getIcon('check-circle') : getIcon('zap')}
+      <span>${message}</span>
+    `;
+
+    container.appendChild(toast);
+
+    // Trigger animation
+    requestAnimationFrame(() => {
+      toast.classList.add('show');
+    });
+
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => {
+        toast.remove();
+      }, 300);
+    }, 4000);
+  }
+
+  window.showToast = showToast;
+});
+
+  </script>
+  https://viber.botpress.cloud/w/wkspace_01M2Q22B1SRXSTT8Q0P1DB0HHJ/agent/bf59076a-cce6-4616-a0ab-ea3c820093c6
+</body>
+</html>
